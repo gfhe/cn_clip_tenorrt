@@ -1,0 +1,16 @@
+platform: "tensorrt_plan"
+max_batch_size: 128
+input [
+  {
+    name: "text"
+    data_type: TYPE_INT32
+    dims: [ 52 ]
+  }
+]
+output [
+  {
+    name: "unnorm_text_features"
+    data_type: TYPE_FP32
+    dims: [ 512 ]
+  }
+]

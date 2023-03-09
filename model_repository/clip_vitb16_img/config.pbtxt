@@ -1,0 +1,16 @@
+platform: "tensorrt_plan"
+max_batch_size: 32
+input [
+  {
+    name: "image"
+    data_type: TYPE_FP32
+    dims: [ 3, 224, 224 ]
+  }
+]
+output [
+  {
+    name: "unnorm_image_features"
+    data_type: TYPE_FP32
+    dims: [ 512 ]
+  }
+]
